@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Set the recipient email address
-    $recipient = "info@exoinafrica.com";
+    $recipient = "messo@exoinafrica.com";
 
     // Set the email subject
     $email_subject = "New Contact Form Message: $subject";
