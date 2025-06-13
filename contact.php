@@ -17,14 +17,14 @@
   $contact->subject = $_POST['subject'];
 
   // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
+  
   $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
+    'host' => 'smtp.zoho.com',
+    'username' => 'messo@exoinafrica.com',
+    'password' => 'Minaaj@20307',
     'port' => '587'
   );
-  */
+  
 
   $contact->add_message( $_POST['name'], 'From');
   $contact->add_message( $_POST['email'], 'Email');
@@ -68,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (mail($recipient, $email_subject, $email_content, $email_headers)) {
         // Set a 200 (okay) response code
         http_response_code(200);
-        echo "Thank You! Your message has been sent.";
+        echo "Thank You! Await Our Response within 4 Hours.";
     } else {
         // Set a 500 (internal server error) response code
         http_response_code(500);
