@@ -34,6 +34,7 @@
   echo $contact->send();
 
 // Check if the request is POST
+/*
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get form data
     $name = strip_tags(trim($_POST["name"]));
@@ -79,4 +80,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     http_response_code(403);
     echo "There was a problem with your submission, please try again.";
 }
+*/
 ?>
